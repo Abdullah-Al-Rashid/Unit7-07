@@ -5,7 +5,7 @@ let counter = 0
 let answer = 0
 let negative = false
 
-// Connect "Multpipy" button to "calculate" function
+// Connect "Multiply" button to "calculate" function
 document.getElementById('multiply').addEventListener('click', calculate)
 
 function calculate () {
