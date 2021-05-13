@@ -5,11 +5,11 @@ let counter = 0
 let answer = 0
 let negative = false
 
-// Connect "Multpipy" button to "calculate" function 
+// Connect "Multpipy" button to "calculate" function
 document.getElementById('multiply').addEventListener('click', calculate)
 
 function calculate () {
-  // Stores inputted numbers as integers 
+  // Stores inputted numbers as integers
   firstNum = document.getElementById('first').value
   secondNum = document.getElementById('second').value
   firstNum = parseInt(firstNum)
@@ -18,23 +18,23 @@ function calculate () {
   negative = false
 
   if (firstNum < 0) {
-      negative = !negative
-      firstNum = Math.abs(firstNum)
+    negative = !negative
+    firstNum = Math.abs(firstNum)
   }
 
   if (secondNum < 0) {
-      negative = !negative
-      secondNum = Math.abs(secondNum)
+    negative = !negative
+    secondNum = Math.abs(secondNum)
   }
 
-  // Addition loops to complete multiplication operation 
+  // Addition loops to complete multiplication operation
   for (counter = 0; counter < firstNum; counter++) {
-      answer = answer + secondNum
+    answer = answer + secondNum
   }
 
   if (negative) {
-      answer = 0 - answer
+    answer = 0 - answer
   }
 
   document.getElementById('answer').innerHTML = answer
-} 
+}
