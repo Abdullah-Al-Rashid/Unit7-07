@@ -1,0 +1,39 @@
+input[type=text] {
+  font-family: 'Concert One', cursive;
+  padding: 12px;
+  margin: 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  transition: 1s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid white;
+}
+
+.city {
+  font-family: 'Concert One', cursive;
+  font-size: 115%;
+}
+
+button {
+  background-color: lightgrey;
+  color: black;
+  border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px;
+  transition-duration: 1s;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: 'Concert One', cursive;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
